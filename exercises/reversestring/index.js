@@ -15,7 +15,12 @@ function reverse(str) {
 
   return reversedArr.join('')
 }
+// console.log(reverse('apple'))
 
 module.exports = reverse
 
-console.log(reverse('apple'))
+const reverse2 = (str) => {
+  return str.split('').reverse().join('')
+}
+
+console.log(reverse2('hello'))
