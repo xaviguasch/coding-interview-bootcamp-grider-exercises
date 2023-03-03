@@ -5,6 +5,33 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
-function maxChar(str) {}
+function maxChar(str) {
+  const charMap = {}
 
-module.exports = maxChar;
+  let mostRepeated = ''
+  let biggestFreq = 0
+
+  for (const char of str) {
+    if (charMap[char]) {
+      charMap[char]++
+    } else {
+      charMap[char] = 1
+    }
+
+    // ALTERNATIVE WAY
+    // charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for (const char in charMap) {
+    if (charMap[char] > biggestFreq) {
+      biggestFreq = charMap[char]
+      mostRepeated = char
+    }
+  }
+
+  return mostRepeated
+}
+
+console.log(maxChar('abcccccccd'))
+
+module.exports = maxChar
