@@ -37,3 +37,15 @@ const reverse3 = (str) => {
 }
 
 // console.log(reverse3('hello'))
+
+const reverse4 = (str) => {
+  let reversedStr = ''
+
+  for (const char of str) {
+    reversedStr = char + reversedStr
+  }
+
+  return reversedStr
+}
+
+console.log(reverse4('hello'))
