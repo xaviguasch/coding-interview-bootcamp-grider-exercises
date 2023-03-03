@@ -51,9 +51,7 @@ const reverse4 = (str) => {
 // console.log(reverse4('hello'))
 
 const reverse5 = (str) => {
-  return str.split('').reduce((acc, currV) => {
-    return currV + acc
-  }, '')
+  return str.split('').reduce((acc, currV) => currV + acc, '')
 }
 
-console.log(reverse5('hello'))
+// console.log(reverse5('hello'))
