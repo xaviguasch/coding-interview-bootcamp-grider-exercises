@@ -14,3 +14,12 @@ function palindrome(str) {
 }
 
 module.exports = palindrome
+
+const palindrome2 = (str) => {
+  return str.split('').every((char, idx) => {
+    return char === str[str.length - idx - 1]
+  })
+}
+
+// console.log(palindrome2('abba'))
+// console.log(palindrome2('abcdefg'))
