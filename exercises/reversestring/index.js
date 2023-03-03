@@ -48,4 +48,12 @@ const reverse4 = (str) => {
   return reversedStr
 }
 
-console.log(reverse4('hello'))
+// console.log(reverse4('hello'))
+
+const reverse5 = (str) => {
+  return str.split('').reduce((acc, currV) => {
+    return currV + acc
+  }, '')
+}
+
+console.log(reverse5('hello'))
