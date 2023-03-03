@@ -23,4 +23,17 @@ const reverse2 = (str) => {
   return str.split('').reverse().join('')
 }
 
-console.log(reverse2('hello'))
+// console.log(reverse2('hello'))
+
+const reverse3 = (str) => {
+  const reversedArr = []
+  const strToArr = str.split('')
+
+  for (let i = strToArr.length - 1; i >= 0; i--) {
+    reversedArr.push(strToArr[i])
+  }
+
+  return reversedArr.join('')
+}
+
+// console.log(reverse3('hello'))
