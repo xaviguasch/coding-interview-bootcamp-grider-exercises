@@ -15,6 +15,7 @@ function palindrome(str) {
 
 module.exports = palindrome
 
+// not very efficient solution
 const palindrome2 = (str) => {
   return str.split('').every((char, idx) => {
     return char === str[str.length - idx - 1]
